@@ -1,3 +1,5 @@
+# YouTube link for presentation video: https://youtu.be/lt8LbaY_lpI
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
