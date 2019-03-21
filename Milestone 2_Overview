@@ -4,11 +4,17 @@ Video presentation:
 =====================
 https://www.youtube.com/watch?v=R5W2lOGxhnU&t=127s
 
+Presentation slide (pdf):
+===========================
+refer to https://github.com/NoraishaYusuf/WQD7005/blob/master/Milestone%202_NoraishaYusuf_WQD180008.pdf
+
+
 Python code:
 =====================
 In milestone 1, we crawled stock, financial performance, news and blogs data. 
 For all python codes, please refer to Github file milestone 1 python code. 
-The codes also contains the part of direct connection with MySQL, to transfer data into staging tables in MySQL 
+https://github.com/NoraishaYusuf/WQD7005/blob/master/Milestone1%20Python%20code
+The codes also contains direct connection with MySQL, which automatically transfer crawled data into staging tables in MySQL 
 
 
 Main references for installation of Hadoop and related packages on Windows OS
