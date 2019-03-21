@@ -1,0 +1,65 @@
+Milestone 2:
+
+Video presentation:
+=====================
+https://www.youtube.com/watch?v=R5W2lOGxhnU&t=127s
+
+
+Main references for installation of Hadoop and related packages on Windows OS
+==============================================================================
+Hadoop: 
+https://github.com/MuhammadBilalYar/Hadoop-On-Window/wiki/Step-by-step-Hadoop-2.8.0-installation-on-Window-10
+
+Hive and derby:
+https://www.youtube.com/watch?v=npyRXkMhrgk
+Download-Hive
+https://archive.apache.org/dist/hive/hive-2.1.0/
+Download-Derby
+https://archive.apache.org/dist/db/derby/db-derby-10.12.1.1/
+
+Sqoop:
+https://www.youtube.com/watch?v=eePrk-UA_gg 
+
+
+
+run hadoop
+================
+cd C:\hadoop-2.8.0\sbin
+
+start-all.cmd
+
+
+run derby
+================
+cd C:\derby\bin
+
+startNetworkServer -h 0.0.0.0
+
+
+run sqoop
+==============
+
+cd C:\sqoop\bin
+
+#run as administrator
+
+sqoop list-databases --connect jdbc:mysql://localhost/ --username sqoop --password abc1234 
+
+sqoop import --connect jdbc:mysql://localhost/wqd7005 --table dim_company --username hive --password abc123 --hive-import --fields-terminated-by ","
+
+sqoop import --connect jdbc:mysql://localhost/wqd7005 --table fact_stock --username hive --password abc123 --hive-import --fields-terminated-by ","
+
+sqoop import --connect jdbc:mysql://localhost/wqd7005 --table fact_financial --username hive --password abc123 --hive-import --fields-terminated-by ","
+
+sqoop import --connect jdbc:mysql://localhost/wqd7005 --table fact_news --username hive --password abc123 --hive-import --fields-terminated-by ","
+
+
+Check hive
+==============
+cd C:\hive\bin
+hive
+show tables;
+
+
+
+
